@@ -1,5 +1,5 @@
 """
-GDC Data Transfer Tool
+Fast Download GDC Data
 """
 from datetime import datetime
 from pathlib import Path
@@ -52,19 +52,24 @@ metadata = LatchMetadata(
 
 @workflow(metadata)
 def gdc_data_transfer(manifest: LatchFile) -> LatchDir:
-    """GDC Data Transfer Tool
+    """Fast Download GDC Data
 
     GDC Data Transfer
     ----
+    [GDC Data Transfer Tool](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) is a command-line tool supporting both GDC data downloads and submissions. Recommended for users with more command line experience that require large data transfers of GDC data or need to download a large numbers of data files.
+
+    ## How to Access
+    Click Here: 
+
+    ## Requirement to Run
+    1. *To download files:* Manifest file from [https://portal.gdc.cancer.gov](https://portal.gdc.cancer.gov) https://portal.gdc.cancer.gov after adding files to cart.
+
+    **Note: `Currently only data download is available.`**
     """
     return gdc_data_task(manifest=manifest)
 
 
-# """
-# Add test data with a LaunchPlan. Provide default values in a dictionary with
-# the parameter names as the keys. These default values will be available under
-# the 'Test Data' dropdown at console.latch.bio.
-# """
+# Test Data
 LaunchPlan(
     gdc_data_transfer,
     "Test Data",
