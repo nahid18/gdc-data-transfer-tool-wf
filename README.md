@@ -6,6 +6,6 @@
 Click Here: [https://console.latch.bio/explore/81590/info](https://console.latch.bio/explore/81590/info)
 
 ## Requirement to Run
-1. *To download files:* Manifest file from [https://portal.gdc.cancer.gov](https://portal.gdc.cancer.gov) https://portal.gdc.cancer.gov after adding files to cart.
+1. *To download files:* Manifest file from [https://portal.gdc.cancer.gov](https://portal.gdc.cancer.gov) after adding files to cart.
 
 **Note: `Currently only data download is available.`**
